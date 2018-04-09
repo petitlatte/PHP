@@ -11,17 +11,16 @@
 	$n1 = 0;
 	$n2 = 1;
 
-	//display 0 and 1 before for loops start
+	//display 0 and 1 before loops start
 	echo $n1. ", ". $n2. ", ";
 
-	//for loop that generates 10 of Fibonacci numbers. 
+	//loop that generates 10 of Fibonacci numbers. 
 		for ($i=1; $i <=10 ; $i++) { 
 
 			$result = $n1 + $n2;
 			$n1 = $n2;
 			$n2 = $result;
 
-			//echo the $result variable (seperated by comma)
 			echo $result . ", ";
 		}
 
@@ -32,7 +31,7 @@ function recursiveFunction($x){
 	$num1= 0;
 	$num2= 1;
 	$total= 0;
-	//displays 0
+
 	echo "<br>".$num1. ", ";
 
 	for ($j=0; $j <= $x ; $j++) {
@@ -51,7 +50,7 @@ function recursiveFunction($x){
 }
 
 //evokes function , displays 10 values
-recursiveFunction(10);
+recursiveFunction(20);
 
 ?>	
 

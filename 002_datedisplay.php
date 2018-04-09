@@ -10,7 +10,8 @@
 
 //Checks for current time, displays greetings based on hour
 
-$hour = date('g');
+date_default_timezone_set('Pacific/Auckland');
+$hour = date('G');
 
 	if ( $hour >= 5 && $hour <= 11.59 ) {
 	   $greetings = "Good Morning";
@@ -24,8 +25,7 @@ $hour = date('g');
 
 	echo $greetings . "<br>";
 	echo "Today is " . date("l d/m/y ");
-	echo " & the current time is " . date("h:i") . "<br>";
-
+	echo " & the current time is " . date("h:i:sa") . "<br>";
 
 //Check to see if this year is a leap year or not 
 
