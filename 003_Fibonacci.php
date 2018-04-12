@@ -49,7 +49,7 @@ function recursiveFunction($x){
 
 }
 
-//evokes function , displays 10 values
+//evokes function , displays 20 values
 recursiveFunction(20);
 
 ?>	
